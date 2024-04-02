@@ -20,5 +20,6 @@ for i in range(human):                                                  #사람�
             break
         elif b==1:                                                      #한쌍도 없을 경우
             sum.append(alist[j]*100)
-print(max(sum))                                                         #가장 높은 결과값을 출력한다
+print(max(sum))                  #가장 높은 결과값을 출력한다
+
 
