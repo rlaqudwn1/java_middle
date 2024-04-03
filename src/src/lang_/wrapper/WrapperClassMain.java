@@ -14,6 +14,8 @@ public class WrapperClassMain {
         System.out.println("== "+ (newInteger == integerObj));
         System.out.println("equals "+ (newInteger.equals(integerObj))); //== 대신 equals를 써야한다
         //기본형을 래퍼클래스로 변경하는 것은 박싱이라 한다
+        //intValue() 박스에 있는걸 다시 꺼내는 걸 언박싱 이라 한다
+        //==비교는 equals() 사용
 
     }
 }
