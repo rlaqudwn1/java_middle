@@ -4,7 +4,7 @@ public class DiscountService {
     public int discount(ClassGrade classGrade, int price) {
         int discountPercent = 0;
         if (classGrade== ClassGrade.BASIC) {
-            discountPercent = 10;
+            return price;
         } else if (classGrade==ClassGrade.GOLD) {
             discountPercent=20;
             

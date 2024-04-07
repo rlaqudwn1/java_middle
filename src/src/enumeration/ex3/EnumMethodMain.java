@@ -15,7 +15,6 @@ public class EnumMethodMain {
             Grade gold = Grade.valueOf(input);
             System.out.println("gold = " + gold); //toString() 오버라이딩 가능
             //ordinal은 가급적 사용하지 않는게 좋다.
-
         }
     }
 }
