@@ -1,4 +1,10 @@
-import math
-D1,D2=map(int,input().split())
-for D1 in range(D2):
-    print(1)
+a,b=list(map(str, input().split("-")))
+if b[0]=="1":
+    print("19"+a[:2]+"/"+a[2:4]+"/"+a[4:],"M")
+elif b[0]=="2":
+    print("19"+a[:2]+"/"+a[2:4]+"/"+a[4:],"F")
+elif  b[0]=="3":
+    print("20"+a[:2]+"/"+a[2:4]+"/"+a[4:],"M")
+elif b[0]=="4":
+    print("20"+a[:2]+"/"+a[2:4]+"/"+a[4:],"F")
+
