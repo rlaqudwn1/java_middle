@@ -10,6 +10,7 @@ public class JdanCase {
         StringBuilder sb = new StringBuilder();
 
         String[] arr = s.split(" ");
+        System.out.println(Arrays.toString(arr));
         for (String string : arr) {
             if (string=="") {
                 System.out.println("null");
