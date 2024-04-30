@@ -1,8 +1,12 @@
 package solution;
 
+import java.util.Arrays;
+
 public class Expectaion {
     public int solution(int n, int a, int b) {
         int answer = 0;
+        int[] asd = {0, 3, 4};
+
 
         while (a != b) {
             a = (a + 1) / 2;
@@ -19,7 +23,7 @@ public class Expectaion {
 
     public static void main(String[] args) {
         Expectaion expectaion = new Expectaion();
-        System.out.println(expectaion.solution(8, 4, 7));
+        System.out.println(expectaion.solution(16, 2, 7));
 
     }
 }
