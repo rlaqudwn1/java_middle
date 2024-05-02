@@ -22,6 +22,7 @@ public class ABS {
                 if (queue.isEmpty()) {
                     System.out.println("0");
                 } else {
+                    System.out.println(queue.peek());
                     System.out.println(queue.poll());
                 }
             } else {
