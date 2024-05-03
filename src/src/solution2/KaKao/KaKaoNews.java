@@ -1,8 +1,6 @@
-package solution2;
+package solution2.KaKao;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Stack;
 
 public class KaKaoNews {
     //문자열의 지카드 유사도 구하는 문제
