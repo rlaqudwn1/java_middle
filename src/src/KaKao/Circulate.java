@@ -1,4 +1,4 @@
-package solution2.KaKao;
+package KaKao;
 
 import java.util.ArrayList;
 
@@ -8,6 +8,10 @@ import java.util.ArrayList;
 // remove (숫자[i] 연산자[i] 숫자[i+1])
 // or (숫자[i-1] 연산자 [i] 숫자[i+1])
 // 연산자 개수만큼 반복하며. 절대값이 가장 큰 점수가 우승한다.
+
+/**
+ * long 주의 하면서 하자.
+ */
 
 public class Circulate {
     public long solution(String expression) {
@@ -44,40 +48,40 @@ public class Circulate {
         stringArrayList=ab(stringArrayList);
         stringArrayList = Minus(stringArrayList);
         stringArrayList = Plus(stringArrayList);
-        answer=Math.max(Math.abs(Integer.parseInt(stringArrayList.get(0))), answer);
+        answer=Math.max(Math.abs(Long.parseLong(stringArrayList.get(0))), answer);
         stringArrayList = (ArrayList<String>) stringArrayList2.clone();
 //        // *+-
         stringArrayList=ab(stringArrayList);
         stringArrayList = Plus(stringArrayList);
         System.out.println(stringArrayList);
         stringArrayList = Minus(stringArrayList);
-        answer=Math.max(Math.abs(Integer.parseInt(stringArrayList.get(0))), answer);
+        answer=Math.max(Math.abs(Long.parseLong(stringArrayList.get(0))), answer);
         System.out.println(answer);
         stringArrayList = (ArrayList<String>) stringArrayList2.clone();
 //        // *+-
         stringArrayList=Plus(stringArrayList);
         stringArrayList = ab(stringArrayList);
         stringArrayList = Minus(stringArrayList);
-        answer=Math.max(Math.abs(Integer.parseInt(stringArrayList.get(0))), answer);
+        answer=Math.max(Math.abs(Long.parseLong(stringArrayList.get(0))), answer);
         stringArrayList = (ArrayList<String>) stringArrayList2.clone();
 //        // *+-
         stringArrayList=Plus(stringArrayList);
         stringArrayList = Minus(stringArrayList);
         stringArrayList = ab(stringArrayList);
-        answer=Math.max(Math.abs(Integer.parseInt(stringArrayList.get(0))), answer);
+        answer=Math.max(Math.abs(Long.parseLong(stringArrayList.get(0))), answer);
         stringArrayList = (ArrayList<String>) stringArrayList2.clone();
 //
 //        // -+*
         stringArrayList=Minus(stringArrayList);
         stringArrayList = Plus(stringArrayList);
         stringArrayList = ab(stringArrayList);
-        answer=Math.max(Math.abs(Integer.parseInt(stringArrayList.get(0))), answer);
+        answer=Math.max(Math.abs(Long.parseLong(stringArrayList.get(0))), answer);
         stringArrayList = (ArrayList<String>) stringArrayList2.clone();
 //        // -*+
         stringArrayList=Minus(stringArrayList);
         stringArrayList = ab(stringArrayList);
         stringArrayList = Plus(stringArrayList);
-        answer=Math.max(Math.abs(Integer.parseInt(stringArrayList.get(0))), answer);
+        answer=Math.max(Math.abs(Long.parseLong(stringArrayList.get(0))), answer);
         stringArrayList = (ArrayList<String>) stringArrayList2.clone();
         return answer;
     }
@@ -86,7 +90,7 @@ public class Circulate {
         int result=0;
         for (int i = 0; i < stringArrayList.size(); i++) {
             if (stringArrayList.get(i).equals("+")) {
-                stringArrayList.set(i, String.valueOf(Integer.parseInt(stringArrayList.get(i - 1)) + Integer.parseInt(stringArrayList.get(i + 1))));
+                stringArrayList.set(i, String.valueOf(Long.parseLong(stringArrayList.get(i - 1)) + Long.parseLong(stringArrayList.get(i + 1))));
                 stringArrayList.remove(i - 1);
                 stringArrayList.remove(i);i=0;
             }
@@ -96,7 +100,7 @@ public class Circulate {
         int result=0;
         for (int i = 0; i < stringArrayList.size(); i++) {
             if (stringArrayList.get(i).equals("-")) {
-                stringArrayList.set(i, String.valueOf(Integer.parseInt(stringArrayList.get(i - 1)) - Integer.parseInt(stringArrayList.get(i + 1))));
+                stringArrayList.set(i, String.valueOf(Long.parseLong(stringArrayList.get(i - 1)) - Long.parseLong(stringArrayList.get(i + 1))));
                 stringArrayList.remove(i - 1);
                 stringArrayList.remove(i);
                 System.out.println(stringArrayList);
@@ -108,7 +112,7 @@ public class Circulate {
         int result=0;
         for (int i = 0; i < stringArrayList.size(); i++) {
             if (stringArrayList.get(i).equals("*")) {
-                stringArrayList.set(i, String.valueOf(Integer.parseInt(stringArrayList.get(i - 1)) * Integer.parseInt(stringArrayList.get(i + 1))));
+                stringArrayList.set(i, String.valueOf(Long.parseLong(stringArrayList.get(i - 1)) * Long.parseLong(stringArrayList.get(i + 1))));
                 stringArrayList.remove(i - 1);
                 stringArrayList.remove(i);i=0;
             }

@@ -6,7 +6,7 @@
     <module name="src" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="solution2.KaKao.*" />
+        <option name="PATTERN" value="KaKao.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

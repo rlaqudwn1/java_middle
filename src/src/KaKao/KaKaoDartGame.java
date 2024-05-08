@@ -1,7 +1,6 @@
-package solution2.KaKao;
+package KaKao;
 
 import java.util.ArrayList;
-import java.util.Map;
 
 // *과 #의 취급에 주의하자 특수문자다..
 public class KaKaoDartGame {

@@ -1,4 +1,4 @@
-package solution2.KaKao;
+package KaKao;
 
 // toBinaryString을 이용해 2진법 문자열을 바꾼다
 // 바꾼 두 문자열 중 1이 하나라도 있는지 확인하고 있으면 #을 추가하고 아니면 공백을 추가한다

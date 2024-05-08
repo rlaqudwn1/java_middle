@@ -1,4 +1,4 @@
-package solution2.KaKao;
+package KaKao;
 
 import java.util.Arrays;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package solution2.KaKao;
+package KaKao;
 
 
 //1사전에 AtoZ가 1~26까지 저장되어 있다.
