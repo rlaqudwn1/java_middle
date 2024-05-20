@@ -31,8 +31,7 @@ public class Delivery { public long solution(int cap, int n, int[] deliveries, i
                 }
             }
         }
-    }
-    return answer;
+//    return answer;
 }
 
     public static void main(String[] args) {
