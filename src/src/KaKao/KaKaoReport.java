@@ -25,6 +25,7 @@ public class KaKaoReport {
         HashMap<String, String> hashMap = new HashMap<>();
         StringBuilder sb = new StringBuilder();
         String a;
+        int[] reportNum = new int[id_list.length];
         for (int i = 0; i < report.length; i++) {
             sb = new StringBuilder();
             if (!hashMap.containsKey(report[i].split(" ")[0])) {
@@ -37,21 +38,42 @@ public class KaKaoReport {
                 }
             }
             }
-        System.out.println(hashMap);
-        for (String value : hashMap.values()) {
-            sb.append(Arrays.toString(value.split(" ")));
+        String[] strings1;
+        for (String s : hashMap.keySet()) {
+            strings1 = hashMap.get(s).split(" ");
+            System.out.println(Arrays.toString(strings1));
+            for (int i = 0; i < strings1.length; i++) {
+                if (strings1[i].equals(id_list[i])) {
+
+                }
+            }
         }
-        System.out.println(sb);
+        for (String s : hashMap.keySet()) {
+            for (int i = 0; i < id_list.length; i++) {
+                if (hashMap.get(s).contains(id_list[i])) {
+                    reportNum[i]++;
+                }
+            }
+        }
+        int check=0;
+        for (String s : hashMap.keySet()) {
+            for (int i = 0; i < id_list.length; i++) {
+                if (hashMap.get(s).contains(id_list[i])&&reportNum[i]>=k) {
+                    answer[check]++;
+                }
+            }
+            check++;
+        }
 
         return answer;
     }
 
     public static void main(String[] args) {
         KaKaoReport kaKaoReport = new KaKaoReport();
-        String[] idlist = {"muzi", "frodo", "apeach", "neo"};
-        String[] report = {"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"};
+        String[] idlist = {"a", "ab", "abc", "b"};
+        String[] report = {"ab a", "ab abc", "ab b", "abc a", "abc ab", "abc b"};
         int k=2;
-        kaKaoReport.solution(idlist, report, k);
+        System.out.println(Arrays.toString(kaKaoReport.solution(idlist, report, k)));
     }
 }
 //"ryan con", "ryan con", "ryan con", "ryan con"
