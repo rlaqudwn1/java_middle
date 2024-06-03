@@ -14,8 +14,8 @@ package KaKao;
 public class BinrayTree {
     public int[] solution(long[] numbers) {
         int[] answer = {};
-        StringBuilder sb = new StringBuilder(Long.toBinaryString(i));
-        for (int j = 0; j < i; j++) {
+        StringBuilder sb = new StringBuilder(Long.toBinaryString(0));
+        for (int j = 0; j < 0; j++) {
             if (Math.pow(2, j) - 1 == sb.length()) {
                 System.out.println(sb+"true");
             }else if (Math.pow(2, j)-1 > sb.length()) {
