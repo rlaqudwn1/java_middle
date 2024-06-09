@@ -12,7 +12,7 @@ public class Oil {
  *     // 시추관 위치별 석유량
  *     static int[] oil;
  *
- *     public int solution(int[][] land) {
+ *     public int codingtest_learn.solution(int[][] land) {
  *         int answer = 0;
  *
  *         n = land.length;

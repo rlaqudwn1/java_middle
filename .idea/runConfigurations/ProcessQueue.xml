@@ -2,11 +2,11 @@
   <configuration default="false" name="ProcessQueue" type="Application" factoryName="Application" nameIsGenerated="true">
     <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../Program Files/Java/jdk-21" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-    <option name="MAIN_CLASS_NAME" value="solution2.ProcessQueue" />
+    <option name="MAIN_CLASS_NAME" value="codingtest_learn.solution2.ProcessQueue" />
     <module name="src" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="KaKao.Blind2023.*" />
+        <option name="PATTERN" value="codingtest_learn.KaKao.Blind2023.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

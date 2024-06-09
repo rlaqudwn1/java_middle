@@ -80,7 +80,7 @@ public class Maze2 {
  *     static int[] dx = {-1, 1, 0, 0};
  *     static int[] dy = {0, 0 , -1, 1};
  *
- *     public int solution(String[] maps) {
+ *     public int codingtest_learn.solution(String[] maps) {
  *         MIRO = new String[maps.length][maps[0].length()];
  *         int[] start = new int[2];
  *         int[] labor = new int[2];
