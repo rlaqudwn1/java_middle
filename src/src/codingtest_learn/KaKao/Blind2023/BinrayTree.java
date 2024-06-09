@@ -1,4 +1,4 @@
-package codingtest_learn.KaKao;
+package codingtest_learn.KaKao.Blind2023;
 
 /**
  * 이진트리  1+2^n= 이진트리

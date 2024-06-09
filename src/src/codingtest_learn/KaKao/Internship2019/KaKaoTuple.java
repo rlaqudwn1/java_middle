@@ -1,4 +1,4 @@
-package codingtest_learn.KaKao;
+package codingtest_learn.KaKao.Internship2019;
 
 import java.util.Arrays;
 import java.util.HashSet;

@@ -1,8 +1,8 @@
-package codingtest_learn.KaKao;
+package codingtest_learn.KaKao.Internship2019;
 
 import java.util.Stack;
 
-public class KaKao {
+public class KaKao_doll {
     //1. 배열에서 moves에 해당하는 값을 찾고 그 값을 스택에 넣는다'
     //2. 그배열 자리에 0을 대입하고 스택의 peek값과 일치하면 poll하고 answer+=2한다.
 
@@ -33,7 +33,7 @@ public class KaKao {
     }
 
     public static void main(String[] args) {
-        KaKao kaKao = new KaKao();
+        KaKao_doll kaKao = new KaKao_doll();
         int[][] sol = {{0, 0, 0, 0, 0}, {0, 0, 1, 0, 3}, {0, 2, 5, 0, 1}, {4, 2, 4, 4, 2}, {3, 5, 1, 3, 1}};
         int[] moves = {1, 5, 3, 5, 1, 2, 1, 4};
 

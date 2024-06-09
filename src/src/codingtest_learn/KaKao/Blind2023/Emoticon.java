@@ -1,4 +1,4 @@
-package codingtest_learn.KaKao;
+package codingtest_learn.KaKao.Blind2023;
 
 /**
  * 1.이모티콘 플러스 가입자를 최대한 늘리면서 판매액 또한 최대로 늘리는 방법.

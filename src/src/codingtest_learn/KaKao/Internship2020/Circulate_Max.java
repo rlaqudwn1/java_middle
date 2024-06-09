@@ -1,4 +1,4 @@
-package codingtest_learn.KaKao;
+package codingtest_learn.KaKao.Internship2020;
 
 import java.util.ArrayList;
 
@@ -8,12 +8,14 @@ import java.util.ArrayList;
 // remove (숫자[i] 연산자[i] 숫자[i+1])
 // or (숫자[i-1] 연산자 [i] 숫자[i+1])
 // 연산자 개수만큼 반복하며. 절대값이 가장 큰 점수가 우승한다.
+// 연산자 연산에 대하여는 함수화 했지만 연산 과정에 대해서는 리팩토링이 필요해보인다.
+
 
 /**
  * long 주의 하면서 하자.
  */
 
-public class Circulate {
+public class Circulate_Max {
     public long solution(String expression) {
         long answer = 0;
         int start_index=0;
@@ -122,7 +124,7 @@ public class Circulate {
 
 
     public static void main(String[] args) {
-        Circulate circulate = new Circulate();
+        Circulate_Max circulate = new Circulate_Max();
         System.out.println(circulate.solution("100-200*300-500+20"));
     }
 

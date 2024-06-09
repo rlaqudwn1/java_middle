@@ -1,4 +1,4 @@
-package codingtest_learn.KaKao;
+package codingtest_learn.KaKao.Internship2019;
 
 /**
  * 1. banned_id.lenth 와 같은 id를 선별하고

@@ -1,4 +1,4 @@
-package codingtest_learn.KaKao;
+package codingtest_learn.KaKao.Blind2022;
 
 import java.util.ArrayList;
 

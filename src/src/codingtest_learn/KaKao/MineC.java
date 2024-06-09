@@ -3,6 +3,7 @@ package codingtest_learn.KaKao;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+// dfs or bfs로 풀이로 보이며 관련문제 탐색 후 풀이
 
 public class MineC {
     public int solution(int[] picks, String[] minerals) {

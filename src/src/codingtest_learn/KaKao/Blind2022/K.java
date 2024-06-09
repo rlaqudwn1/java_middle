@@ -1,7 +1,6 @@
-package codingtest_learn.KaKao;
+package codingtest_learn.KaKao.Blind2022;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * 1. n 을 k진수로 변환한다.

@@ -1,4 +1,4 @@
-package codingtest_learn.KaKao;
+package codingtest_learn.KaKao.Internship2020;
 
 import java.util.ArrayList;
 import java.util.Arrays;
