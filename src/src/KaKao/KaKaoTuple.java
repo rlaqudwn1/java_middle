@@ -17,7 +17,6 @@ public class KaKaoTuple {
 
     public static void main(String[] args) {
         String s = "{{4,2,3},{3},{2,3,4,1},{2,3}}";
-
         //1 글자 파싱하기
         String[] split = s.split("\\},\\{"); // {}를 \\이스케이프하여 split해 배열에 저장"
         // 배열의 맨앞 맨뒤 문자열의 {}제거

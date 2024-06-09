@@ -2,7 +2,7 @@ package KaKao;
 
 import java.util.ArrayList;
 
-// *과 #의 취급에 주의하자 특수문자다..
+// *과 #의 취급에 주의
 public class KaKaoDartGame {
     public int solution(String dartResult) {
         ArrayList<Integer> integerArrayList = new ArrayList<>();

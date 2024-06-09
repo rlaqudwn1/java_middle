@@ -9,8 +9,10 @@ import java.util.*;
  */
 
 /**
- * ! 년 ,월, 일을
- * 12*28일 , 28*일,일 로 치환하여 계산한다.
+ * 리팩토링) 년 ,월을 일로 변환하여 계산한다.
+ * 이유 년, 월을 따로 계산할 경우 년단위 월단위 일단위로 계산하는 if문의 예외처리가 까다로웠고 가독성이 떨어진다.
+ * 미리 년, 월을 일로 통합하면 예외처리에 대한 걱정이 줄며 코드수도 확연히 줄어들었다.
+ *
  * 리팩토링 결과
  */
 public class Personal_Info {
@@ -57,7 +59,7 @@ public class Personal_Info {
     }
 }
 /**
- * 리팩토링 전 코드 년 월 일을 따로 분리해서 비교해서 구현난이도와 디버깅 둘 다 어렵다.
+ * 리팩토링 전 코드 년 월 일을 따로 분리했기 때문에 변수관리와 예외처리 디버깅이 더 난해하다.
  */
 //public int[] solution(String today, String[] terms, String[] privacies) {
 //    StringBuilder sb = new StringBuilder();
