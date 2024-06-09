@@ -1,4 +1,4 @@
-package KaKao;
+package KaKao.Blind2023;
 
 /**
  * 1.배달 개수 기준으로 cap의 개수를 초과하지 않는 선에서 맨 뒤에서 출발
@@ -16,24 +16,26 @@ public class Delivery {
                 i--;
                 continue;
             }
+            int caps =cap;
             for (int j = i; j >= 0; ) {
-                if (cap >= deliveries[j]) {
-                    cap -= deliveries[j];
+                if (caps >= deliveries[j]) {
+                    caps -= deliveries[j];
                     deliveries[j--] = 0;
                 } else {
-                    deliveries[j] -= cap;
+                    deliveries[j] -= caps;
                     break;
                 }
+                caps=cap;
                 for (int k = i; k >= 0; ) {
-                    if (cap >= pickups[k]) {
-                        cap -= pickups[k];
+                    if (caps >= pickups[k]) {
+                        caps -= pickups[k];
                         deliveries[k--] = 0;
                     } else {
-                        deliveries[k] -= cap;
+                        deliveries[k] -= caps;
                         break;
                     }
                 }
-                answer += (long)((i + 1) * 2);
+                answer += (long)((i + 1) * 2L);
             }
         }
 
