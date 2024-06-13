@@ -1,4 +1,4 @@
-package dfs_bfs.DFS;
+package codingtest_learn.dfs_bfs.DFS;
 
 import java.io.BufferedReader;
 import java.io.IOException;
